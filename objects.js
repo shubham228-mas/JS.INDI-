@@ -82,10 +82,29 @@ const users = [
     },
 ]
  users[1].email
- console.log(tinderUser)
+//  console.log(tinderUser)
 
- console.log(Object.keys(tinderUser))//gives and array of all id name islogged in 
- console.log(Object.values(tinderUser))// gives vslues in the form of array 
- console.log(Object.entries(tinderUser))//gives array in the array like 3 entries 
- console.log(tinderUser.hasOwnProperty('IsLOggedIn'))
+//  console.log(Object.keys(tinderUser))//gives and array of all id name islogged in 
+//  console.log(Object.values(tinderUser))// gives vslues in the form of array 
+//  console.log(Object.entries(tinderUser))//gives array in the array like 3 entries 
+//  console.log(tinderUser.hasOwnProperty('IsLOggedIn'))
 
+
+ const course = {
+    coursename : " JS in hindi ",
+    price : "999",
+    teacher: " chai or code "
+
+ }
+// course.coursename simple way of axis but when we have more than 3 then we use ..
+
+const {teacher: monika } = course // sunytax of another methood mostly people use 
+// here we can also change the name of the teacher like monika but output is same modified by ourself 
+
+console.log(monika)
+
+// {
+//     "coursename": " shubhm ",//ERROE DEGA YEAH YAHA PE YEAH JSON KA SYNTX HAI API RELATED 
+//     "price " : "free ",
+//     "course" : "JS INN HINDI "
+// }
