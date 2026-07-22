@@ -4,16 +4,16 @@
 
 // const mySym = Symbol("key1")
 
-// const jsUser = {
-//     name: " shbham ",
-//     "full name " : " shuhbham bansal ", // can be axis by only square brackets method 
-//     [mySym] :" mykey1 ",
-//     age : 18 ,
-//     email : "shubham6498g@gmail.com",
-//     isLoggedIn : false ,
-//     lastLoginDays : ["monday","sunday"] 
+const jsUser = {
+    name: " shbham ",
+    "full name " : " shuhbham bansal ", // can be axis by only square brackets method 
+    [mySym] :" mykey1 ",
+    age : 18 ,
+    email : "shubham6498g@gmail.com",
+    isLoggedIn : false ,
+    lastLoginDays : ["monday","sunday"] 
 
-// }
+}
 // // console.log(jsUser.email);
 // // console.log(jsUser["email"]);//another meethod of axis objeccts 
 // // console.log(jsUser["full name "]);
