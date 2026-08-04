@@ -33,10 +33,21 @@
         // EDIT 
 
         const secondLang = document.querySelector("li:nth-child(3)")
+        console.log(secondLang);
+        
         // secondLang.innerHTML = " MOJO "
         const newLi = document.createElement('li')
         newLi.textContent = " SWIFT "
         secondLang.replaceWith(newLi)
+        
+        // EDIT EXAMPLE another method 
+        const firstLang = document.querySelector("li:first-child")
+        firstLang.outerHTML = '<li>TYPESCRIPT</LI>'
+            
+            //REMOVE 
+            const lastLang = document.querySelector("li:last-child")
+            lastLang.remove()
         </script>
+
 
 </html>
