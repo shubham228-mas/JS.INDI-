@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> DOM LEARNING </title>
 </head>
-<body style = "background-color: #212121; color: aqua;">
+<body style = "background-color: #7780dd; color: rgb(0, 0, 0);">
     <div class="parent">
+        <!-- this is a comment  -->
         <div class="day">monday</div>
         <div class="day">tuesday</div>
         <div class="day">wednesday</div>
@@ -19,10 +20,22 @@
 //    console.log(parent);
 //    console.log(parent.children)
 //    console.log(parent.children[1].innerHTML)
-for(i = 0; i < parent.children.length ; i++){
+// for(i = 0; i < parent.children.length ; i++){
     // console.log(parent.children[i].innerHTML);
     // console.log(parent.children[i].innerText);
-    console.log(parent.children[i].innerText);
-}
+    // console.log(parent.children[i].innerText);
+
+// }
+parent.children[1].style.color = "green"
+// console.log(parent.firstElemntChild);
+// console.log(parent.lasttElemntChild);
+
+const dayOne = document.querySelector('.day');//sirf ek value dega first vai kyuki all nhi hai 
+// console.log(dayOne)
+// console.log(dayOne.parentElement)
+// console.log(dayOne.nextElementSibling)
+
+console.log("NODES",parent.childNodes)
+// gives all nodelist of the parent even line enter will also considered like we enter for the next line this also consider a node 
 </script>
 </html>

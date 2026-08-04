@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUBHAM BANSAL </title>
+</head>
+<body style = "background-color: #212121; color: rgb(0, 0, 0);">
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "myName"
+    div.id = Math.round(Math.random() * 10 +  1)
+    div.setAttribute("title","generated title");
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+
+    // div.innerText = " CHAI AUR CODE "// IT IS A DEBATEABLE TEXT COMMANT SO GENERALLY ALL DEV PREFERS LIKE CREATE NODE THEN DIV .APPEND CHILD LIKE 
+    const addText = document.createTextNode("SHUBHAM BANSAL")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>
