@@ -82,3 +82,26 @@ form.addEventListener('submit', function (ff) {
 
 
 ```
+
+
+## project 3 DIGITAL CLOCK solution code 
+
+``` javascript 
+const clock = document.getElementById('clock')
+// use can use any method both are same 
+// const clock = document.querySelector('#clock')
+let date  = new Date();
+console.log(date.toLocaleTimeString())
+
+
+// set interval function hota hai javascript ka jo hr event ko bar bar chlata hai jab tak ham kuch or na kre chlata rhega jese ki time chlta rhega 
+// 100 means one second 2000 means 2 second what you need 
+setInterval(function (){
+  let date  = new Date();
+// console.log(date.toLocaleTimeString())
+clock.innerHTML = date.toLocaleTimeString();
+
+},1000)
+
+
+```
