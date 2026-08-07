@@ -78,7 +78,4 @@ form.addEventListener('submit', function (ff) {
     }
   }
 });
-
-
-
 ```
