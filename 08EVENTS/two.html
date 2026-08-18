@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SHUBHAM BANSAL </h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // const sayShubham =function(){
+    //     console.log("Shubham bansl")
+    // } 
+    const changeTime = function(){
+        document.querySelector('h1').innerHTML = 'BESY JAVA SCRIPT SERIES '
+    }
+    
+    // setTimeout(sayShubham,5000)//mujhe 2 sec ka time do mai usse krdunga ek hi bar print hoga kuch time ke bad jese men2 2 sec rkha vese hi 
+     
+    const changeMe = setTimeout(changeTime , 5000 )
+
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+            clearTimeout(changeMe);
+            console.log("Stopped");
+    })
+
+    
+</script>
+</html>

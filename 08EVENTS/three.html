@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai or javascript  </h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+    
+</body>
+<script>
+    const intervalChange = function(){
+        console.log("hello")
+    }
+    // const intervalStart = setInterval(intervalChange,2000)
+    let intervalStart = null
+    document.querySelector('#start')
+    .addEventListener('click',function(){
+        if(intervalStart===null){
+          intervalStart = setInterval(intervalChange,1000)
+            console.log("START")
+        }
+    })
+     document.querySelector('#stop').
+     addEventListener('click', function(){
+        clearInterval(intervalStart)
+        intervalStart = null
+        console.log("stopped")
+     })
+
+</script>
+</html>
