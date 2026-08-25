@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const request = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();;
+    xhr.open('GET' , request)
+    xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState === 4 ){//on ready state hr state pe check krta hai sab ek ek krke 
+                console.log(this.responseText)
+            }
+
+    }// current context pe this lgaya jata hai to yaha this operator use krenge ham 
+    //or yeah sab AJAX api request hai purana jmane mai jab Fetch nhi hota tha tab isiliye sikh rhe hain knowledge ke lie 
+    xhr.send();
+</script>
+</html>
